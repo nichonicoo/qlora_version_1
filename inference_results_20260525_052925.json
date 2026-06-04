@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-7b-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-25T05:29:43.481716",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Cari Hotel di Medan",
+      "answer": "Hotel yang tersedia ada 13:"
+    }
+  ]
+}

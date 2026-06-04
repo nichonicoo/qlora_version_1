@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-24T15:24:05.574111",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Cari tiket ke Bali",
+      "answer": "Pesawat yang tersedia dari Bandara CGK ke Bandara DPS pada tanggal 2026-09-10 - 2026-09-15 ada 5 penerbangan:- **Lion (JT 30)** Jam: 08:20 - 11:15 Kelas: Economy Harga: Rp 3.312.300 Detail: Menggunakan pesawat Boeing 737, Ruang kaki sempit, Estimasi emisi karbon: 88 kg- **Indonesia AirAsia (QZ 802)** Jam: 09:45 - 12:35 Kelas: Economy Harga: Rp 3.414.741 Detail: Menggunakan pesawat Airbus A320, Ruang kaki sempit, Estimasi emisi karbon: 96 kg- **Garuda Indonesia (GA 404)** Jam: 09:30 - 12:25 Kelas: Economy Harga: Rp 4.155.511 Detail: Menggunakan pesawat Boeing 737, Ruang kaki standar, Hiburan di pesawat tersedia, Estimasi emisi karbon: 107 kg- **Nam Air (IN 282)** Jam: 05:30 - 08:20 Kelas: Economy Harga: Rp - Detail: Menggunakan pesawat Boeing 737, Estimasi emisi karbon: 140 kg- **Sriwijaya Air (SJ 272)** Jam: 18:00 - 20:50 Kelas: Economy Harga: Rp - Detail: Menggunakan pesawat Boeing 737, Estimasi emisi karbon: 95 kg"
+    }
+  ]
+}

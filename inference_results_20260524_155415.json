@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-24T15:54:40.485165",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Lokasi apa yang anda sarankan untuk liburan di Indonesia",
+      "answer": "Anda bisa mengeksplorasi Pulau Lihaga, sebuah pulau kecil di sebelah timur Pulau Samosir yang dikelilingi pasir putih bersih dan air biru transparan. Tempat ini sangat populer bagi wisatawan yang mencari ketenangan dan keindahan alam yang luar biasa tanpa harus bermigrasi ke pulau utama."
+    }
+  ]
+}

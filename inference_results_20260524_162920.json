@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-24T16:29:46.561961",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Lokasi apa yang anda sarankan untuk liburan di Indonesia",
+      "answer": "Jika Anda mencari destinasi liburan di Indonesia yang menawarkan perpaduan sempurna antara keajaiban alam dan kekayaan budaya, saya sangat merekomendasikan kawasan Danau Toba di Sumatera Utara. Sebagai salah satu dari 5 Destinasi Super Prioritas, danau vulkanik terbesar di dunia ini menyimpan pesona magis yang tidak akan Anda temukan di belahan bumi manapun."
+    }
+  ]
+}

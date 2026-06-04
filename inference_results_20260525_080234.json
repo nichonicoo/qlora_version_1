@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-7b-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-25T08:02:58.488486",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Apa keunikan dari Danau Toba?",
+      "answer": "Danau Toba unik karena merupakan danau vulkanik terbesar di dunia dan melingkarinya ada pulau berbentuk seperti kepala raja. Di sekitarnya, Anda bisa menemukan berbagai mata air panas segar yang diperkirakan sudah ribuan tahun lalu, serta desa-desa adat Batak yang masih melestarikan tradisi mereka dengan baik. Danau ini bukan sekadar objek wisata; namun, pusat spiritual bagi masyarakat Batak dan bagian penting dari sejarah suku asli Indonesia."
+    }
+  ]
+}

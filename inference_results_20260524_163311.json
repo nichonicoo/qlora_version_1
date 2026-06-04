@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-24T16:33:37.211995",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Lokasi apa yang anda sarankan untuk liburan di Indonesia",
+      "answer": "Destinasi utama Indonesia: Borobudur untuk arsitektur Buddha, Likupang untuk pantai karang, Mandalika untuk balap dan budaya Sasak, Danau Toba untuk peradaban Batak, dan Labuan Bajo untuk fosil dinosaurus. Masing-masing menawarkan keajaiban geografis dan sejarah yang berbeda namun sama-sama spektakuler."
+    }
+  ]
+}

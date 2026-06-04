@@ -7,13 +7,13 @@ from transformers import (
     BitsAndBytesConfig
 )
 from peft import LoraConfig
-from trl import SFTTrainer
+from trl import SFTTrainer, SFTConfig
 
 # =========================
 # CONFIG
 # =========================
-model_name = "Qwen/Qwen2-7B-Instruct"   # ganti ke 1.5B kalau VRAM kecil
-dataset_path = "data/full/full_dataset.jsonl"
+model_name = "Qwen/Qwen3-8B"   # ganti ke 1.5B kalau VRAM kecil
+dataset_path = "data/merged_full/full_dataset_augmented.jsonl"
 
 # =========================
 # TOKENIZER
@@ -82,36 +82,71 @@ def format_chat(example):
         tokenize=False,
         add_generation_prompt=False
     )
+# def format_chat(batch):
+#     formatted_texts = []
+#     # Iterasi langsung melalui list of messages di dalam batch
+#     for messages in batch["messages"]:
+#         text = tokenizer.apply_chat_template(
+#             messages,
+#             tokenize=False,
+#             add_generation_prompt=False  # Wajib False saat training agar model belajar jawabannya
+#         )
+#         formatted_texts.append(text)
+#     return formatted_texts
 
 # =========================
 # TRAINING ARGUMENTS
 # =========================
-training_args = TrainingArguments(
-    output_dir="./qwen-toba",
+# training_args = TrainingArguments(
+#     output_dir="./qwen-toba",
+#     per_device_train_batch_size=2,
+#     gradient_accumulation_steps=4,
+#     learning_rate=2e-4,
+#     num_train_epochs=3,
+#     logging_steps=10,
+#     save_steps=200,
+#     bf16=True,
+#     optim="paged_adamw_32bit",
+#     lr_scheduler_type="cosine",
+#     warmup_ratio=0.03,
+#     report_to="none"
+# )
+training_args = SFTConfig(
+    output_dir="./qwen3-8b-qlora-train",
     per_device_train_batch_size=2,
     gradient_accumulation_steps=4,
-    learning_rate=2e-4,
+    learning_rate=1e-4,
     num_train_epochs=3,
     logging_steps=10,
-    save_steps=200,
+    save_steps=100,
     bf16=True,
     optim="paged_adamw_32bit",
     lr_scheduler_type="cosine",
-    warmup_ratio=0.03,
-    report_to="none"
+    warmup_steps=50,
+    report_to="none",
+    max_length=4096,        # ← goes here in trl >= 1.0
+    dataset_text_field=None,    # using formatting_func, so set to None
 )
 
 # =========================
 # TRAINER
 # =========================
+# trainer = SFTTrainer(
+#     model=model,
+#     train_dataset=dataset["train"],
+#     peft_config=peft_config,
+#     # tokenizer=tokenizer,
+#     formatting_func=format_chat,
+#     # max_seq_length=2048,
+#     args=training_args
+# )
 trainer = SFTTrainer(
     model=model,
     train_dataset=dataset["train"],
     peft_config=peft_config,
-    tokenizer=tokenizer,
     formatting_func=format_chat,
-    max_seq_length=2048,
-    args=training_args
+    processing_class=tokenizer,   # ← ganti dari tokenizer=tokenizer
+    args=training_args,
 )
 
 # =========================
@@ -122,5 +157,5 @@ trainer.train()
 # =========================
 # SAVE MODEL
 # =========================
-trainer.save_model("./qwen-finetuned-final")
-tokenizer.save_pretrained("./qwen-finetuned-final")
+trainer.save_model("./qwen3-8b-finetuned-final")
+tokenizer.save_pretrained("./qwen3-8b-finetuned-final")

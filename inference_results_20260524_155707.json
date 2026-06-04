@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-24T15:57:32.223677",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Lokasi apa yang anda sarankan untuk liburan di Indonesia",
+      "answer": "Untuk perjalanan yang menyegarkan, saya merekomendasikan area Pantai Tanjung Aan atau Pulau Lihaga di sekitar Labuan Bajo. Jaraknya tidak jauh dari pusat kota, namun Anda akan mendapatkan suasana tenang dengan pasir putih halus dan air biru cerah yang jernih. Ini adalah tempat sempurna untuk melarikan diri selama beberapa hari tanpa harus bepergian jauh."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-7b-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-25T05:38:22.926450",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Apakah hujan di jakarta",
+      "answer": "Halo! Selamat datang di layanan prakiraan cuaca BMKG untuk **Surakarta**. Berikut kondisi cuaca terkini:\n\nKondisi Cuaca Terkini:\n- **Status Cuaca**: Cerah\n- **Suhu Udara**: 24°C\n- **Kelembaban**: 95%\n- **Kecepatan Angin**: 3.2 knots\n\nRekomendasi Praktis Wisatawan:\n- **Pakaian yang Cocok**: Pakaian ringan berlapis seperti kaos katun dan celana panjang\n- **Perlengkapan Wajib**: Sunscreen SPF 30+, kacamata hitam, topi atau helm anti UV\n\nSemoga aktivitas Anda di **Surakarta** menyenangkan dan tetap aman! 🌤️"
+    }
+  ]
+}

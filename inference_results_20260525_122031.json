@@ -1,0 +1,13 @@
+{
+  "model": "./qwen3-8b-finetuned-final",
+  "base_model": "Qwen/Qwen3-8B",
+  "timestamp": "2026-05-25T12:21:01.051486",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Apa keunikan dari Danau Toba?",
+      "answer": "<think>\n\n</think>\n\nDanau Toba memiliki keunikan sebagai 'Super Volcano' yang masih aktif namun tidak meletus karena adanya sistem hidrotermal yang stabil. Keunikan lainnya adalah menjadi tempat lahirnya peradaban Batak kuno yang masih bertahan hingga kini melalui bahasa, musik, dan tarian tradisional mereka. Selain itu, bentuk danau bulat sempurna yang terbentuk dari letusan supervolcano jutaan tahun lalu membuatnya menjadi salah satu situs geologis paling spektakuler di dunia."
+    }
+  ]
+}

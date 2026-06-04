@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-7b-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-25T05:32:00.816779",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Cari Hotel di Medan",
+      "answer": "Untuk kisaran harga di sekitar Rp750rb - Rp900rb per malam, Anda bisa mencari hotel seperti Novotel Medan Business Bay atau Ramada by Wyndham Medan City. Pastikan cek fasilitas khusus seperti akses internet stabil dan area parkir yang cukup luas karena lalu lintas Medan bisa cukup padat di jam-jam sibuk."
+    }
+  ]
+}

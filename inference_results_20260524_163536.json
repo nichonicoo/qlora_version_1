@@ -1,0 +1,13 @@
+{
+  "model": "./qwen2-instruct-finetuned-final",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-05-24T16:36:01.352981",
+  "total_questions": 1,
+  "results": [
+    {
+      "id": 1,
+      "question": "Lokasi apa yang anda sarankan untuk liburan di Indonesia",
+      "answer": "Anda wajib mengunjungi Danau Toba. Lokasinya berada di puncak jawa Timur, dekat perbatasan Sumatera Utara. Di sini Anda bisa melihat gunung berapi aktif, hutan pinus, dan danau biru besar yang menyebar seperti gelap di tengah padang rumput hijau. Suasana sangat tenang dan asri, cocok bagi mereka yang mencari ketenangan dari keramaian kota."
+    }
+  ]
+}
